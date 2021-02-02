@@ -8,3 +8,32 @@ l:=2*pi*r;
 S:=pi*r*r;
 writeln('длина окружности =',l,'площадь окружности =',S)
 end.
+
+
+program b;
+var
+r:integer;
+begin
+writeln('введите четырехзначное число');
+readln(r);
+r:=r mod 10*1000+r div 100 mod 10*100+r div 10 mod 10*10+r div 1000;
+writeln('Число после перестановки = ',r);
+end.
+
+
+
+
+Program c;
+var
+  d,a,b:integer;
+  begin
+  writeln('Введите начало промежутка');
+    readln(a);
+    writeln('Введите конец промежутка');
+    readln(b);
+  loop 5 do
+  begin
+    d:=random(b)+a;
+    writeln('Числа',d)
+    end
+  end.
