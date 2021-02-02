@@ -1,0 +1,10 @@
+program a;
+var
+r,l,S:real;
+begin
+writeln('ввести радиус окружности');
+readln(r);
+l:=2*pi*r;
+S:=pi*r*r;
+writeln('длина окружности =',l,'площадь окружности =',S)
+end.
